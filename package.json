@@ -1,0 +1,13 @@
+{
+    "name": "sorting-visualizer",
+    "version": "1.0.0",
+    "description": "A web-based sorting algorithm visualizer",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server/server.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
+  
