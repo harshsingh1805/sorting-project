@@ -19,10 +19,7 @@ app.post('/sort', (req, res) => {
     const { algorithm, dataset } = req.body;
     const sortingAlgorithms = require('./sorting');
 
-    const sortingAlgorithms = require('./sorting');
-
     if (sortingAlgorithms[algorithm]) {
-        res.json(sortingAlgorithms[algorithm](dataset));
         res.json(sortingAlgorithms[algorithm](dataset));
     } else {
         res.status(400).json({ error: "Invalid sorting algorithm" });
