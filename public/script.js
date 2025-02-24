@@ -56,7 +56,7 @@ function drawDataset(data) {
 function startSorting() {
     sortingPaused = false;
     const algo = document.getElementById('algo').value;
-    fetch('https://sorting-project.onrender.com/', {
+    fetch('/sort', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ algorithm: algo, dataset })
